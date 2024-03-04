@@ -306,10 +306,17 @@ nav ul li a:hover {
                 </li>
                 </div>
                 <ul class=barre>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#a-propos">À propos</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="index.php">Accueil</a>
+                </li>
+                <li>
+                    <a href="read.php"> 
+                        <div style="float: right;">
+                    <a href="create.php" class="btn btn-success">Créer une nouvelle idée</a>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="read.php">Liste de mes idées</a></li>
                 </ul>              
                 <button class="Btn">
                    <div class="sign">
@@ -329,9 +336,7 @@ nav ul li a:hover {
 <br>
 <br>
 <br>
-    <div style="float: right;">
-    <a href="create.php" class="btn btn-success">Créer une nouvelle idée</a>
-    </div>
+   
     <?php 
 /* Inclure le fichier config */
 require_once "config.php";
